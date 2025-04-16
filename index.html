@@ -76,6 +76,12 @@
     ],
     [
       "NYSE:CEPU|1D"
+    ],
+    [
+      "SP:SPX|1D"
+    ],
+    [
+      "BMFBOVESPA:IBOV|1D"
     ]
   ],
   "chartOnly": false,
@@ -84,25 +90,30 @@
   "locale": "en",
   "colorTheme": "dark",
   "autosize": true,
-  "showVolume": false,
-  "showMA": false,
+  "showVolume": true,
+  "showMA": true,
   "hideDateRanges": false,
   "hideMarketStatus": false,
   "hideSymbolLogo": false,
   "scalePosition": "right",
   "scaleMode": "Normal",
   "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
-  "fontSize": "10",
+  "fontSize": "12",
   "noTimeScale": false,
   "valuesTracking": "1",
   "changeMode": "price-and-percent",
-  "chartType": "area",
-  "maLineColor": "#2962FF",
+  "chartType": "candlesticks",
+  "maLineColor": "rgba(0, 188, 212, 1)",
   "maLineWidth": 1,
-  "maLength": 9,
+  "maLength": 30,
   "headerFontSize": "medium",
-  "lineWidth": 2,
   "lineType": 0,
+  "compareSymbol": {
+    "symbol": "SP:SPX",
+    "lineColor": "#FF9800",
+    "lineWidth": 2,
+    "showLabels": true
+  },
   "dateRanges": [
     "1d|1",
     "1w|60",
@@ -111,7 +122,13 @@
     "60m|1W",
     "all|1M"
   ],
-  "dateFormat": "qq 'yy"
+  "dateFormat": "dd/MM/yy",
+  "upColor": "#22ab94",
+  "downColor": "#f7525f",
+  "borderUpColor": "#22ab94",
+  "borderDownColor": "#f7525f",
+  "wickUpColor": "#22ab94",
+  "wickDownColor": "#f7525f"
 }
   </script>
 </div>
